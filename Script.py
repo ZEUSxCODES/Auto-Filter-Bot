@@ -9,8 +9,8 @@ class script(object):
 ★ Library: <a href=https://pyrogram.org>Pyrogram</a>"""
 
     MY_OWNER_TXT = """★ Name: RK Bots
-★ Username: @Rk_botowner
-★ Update Channel : @Rkbotz"""
+★ Username: @D347H1_0V3R
+★ Update Channel : @film_nest"""
 
     STATUS_TXT = """🗂 Total Files: <code>{}</code>
 👤 Total Users: <code>{}</code>
