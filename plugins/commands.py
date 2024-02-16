@@ -108,7 +108,7 @@ async def start(client, message):
             reply_markup = InlineKeyboardMarkup(btn)
             await message.reply_photo(
                 photo=random.choice(PICS),
-                caption=f"👋 Hello {message.from_user.mention},\n\nPlease join my 'Updates Channel' and try again. 😇",
+                caption=f"👋 Hello {message.from_user.mention},\n\nPlease join my 'Movie Channel' and try again. 😇",
                 reply_markup=reply_markup,
                 parse_mode=enums.ParseMode.HTML
             )
@@ -550,7 +550,7 @@ async def remove_premium_cmd_handler(client, message):
             await message.reply_text("Premium access removed to the user.")
             await client.send_message(
                 chat_id=user_id,
-                text=f"<b>premium removed by admins \n\n Contact Admin if this is mistake \n\n 👮 Admin : @Rk_botowner \n</b>",                
+                text=f"<b>premium removed by admins \n\n Contact Admin if this is mistake \n\n 👮 Admin : @D347h1_0v3r </b>",                
             )
         else:
             await message.reply_text("Invalid time format.'")
@@ -579,7 +579,7 @@ async def check_plans_cmd(client, message):
         await message.reply_text(f"**Your plans details are :\n\nRemaining Time : {remaining_time}\n\nExpirytime : {expiry_time}**")
     else:
         btn = [ 
-            [InlineKeyboardButton("ɢᴇᴛ ғʀᴇᴇ ᴛʀᴀɪʟ ғᴏʀ 5 ᴍɪɴᴜᴛᴇꜱ ☺️", callback_data="get_trail")],
+            [InlineKeyboardButton("ɢᴇᴛ ғʀᴇᴇ ᴛʀᴀɪʟ ғᴏʀ 30 ᴍɪɴᴜᴛᴇꜱ ☺️", callback_data="get_trail")],
             [InlineKeyboardButton("ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ : ʀᴇᴍᴏᴠᴇ ᴀᴅs", callback_data="buy_premium")],
             [InlineKeyboardButton("⚠️ ᴄʟᴏsᴇ / ᴅᴇʟᴇᴛᴇ ⚠️", callback_data="close_data")]
         ]
