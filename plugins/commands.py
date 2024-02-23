@@ -129,7 +129,8 @@ async def start(client, message):
             )   
             if settings.get('is_stream', IS_STREAM):
                 btn = [[
-                    InlineKeyboardButton("✛ ᴡᴀᴛᴄʜ & ᴅᴏᴡɴʟᴏᴀᴅ ✛", callback_data=f"stream#{file.file_id}")
+                            InlineKeyboardButton("ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ", url=watch),
+                       InlineKeyboardButton("ꜰᴀsᴛ ᴅᴏᴡɴʟᴏᴀᴅ", url=download)
                 ],[
                     InlineKeyboardButton('⚡️ ᴜᴘᴅᴀᴛᴇs ⚡️', url=UPDATES_LINK),
                     InlineKeyboardButton('💡 ꜱᴜᴘᴘᴏʀᴛ 💡', url=SUPPORT_LINK)
@@ -145,7 +146,7 @@ async def start(client, message):
                 ]]
             await client.send_cached_media(
                 chat_id=message.from_user.id,
-                file_id=file.file_id,
+                file_id=file.file_id,  
                 caption=f_caption,
                 protect_content=settings['file_secure'],
                 reply_markup=InlineKeyboardMarkup(btn)
